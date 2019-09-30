@@ -1,0 +1,23 @@
+<div class="container-fluid">
+  <table class="table">
+    <thead class="thead-light">
+      <tr>
+        <th scope="col">Name</th>
+        <th scope="col">Img</th>
+        <th scope="col">Price</th>
+        <th scope="col">Quantity</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let prd of selectProd">
+        <td>{{prd.Name}}</td>
+        <td><img [src]="'http://localhost:59825/'+prd.url" width="150px" height="150px"></td>
+        <td>{{prd.Price}}</td>
+        <td>{{prd.Quantity}}</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <br>
+  <button class="btn btn-primary" (click)="goBack()">Back</button>
+</div>

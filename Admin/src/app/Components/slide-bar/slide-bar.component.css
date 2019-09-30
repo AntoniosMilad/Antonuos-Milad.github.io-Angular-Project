@@ -1,0 +1,78 @@
+#sidebar {
+    background: #7386D5;
+    color: #fff;
+    transition: all 0.3s;
+}
+#sidebar.active{
+	margin-left: -250px;
+}
+
+#sidebar .sidebar-header{
+	padding: 20px;
+	background: #6d7fcc;
+}
+.user-pic {
+    float: left;
+    width: 60px;
+    padding: 2px;
+    border-radius: 12px;
+    margin-right: 15px;
+    overflow: hidden;
+  }
+  
+.user-pic img {
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+  }
+  
+  .user-info {
+    float: left;
+  }
+  
+  .user-info > span {
+    display: block;
+  }
+  
+  .user-info .user-role {
+    font-size: 12px;
+  }
+  
+  .user-info .user-status {
+    font-size: 11px;
+    margin-top: 4px;
+  }
+  
+  .user-info .user-status i {
+    font-size: 8px;
+    margin-right: 4px;
+    color: #5cb85c;
+  }
+
+#sidebar ul.components{
+	padding: 20px 0px;
+	border-bottom: 1px solid #47748b;
+}
+
+#sidebar ul p{
+	padding: 10px;
+	font-size: 1.1em;
+	display: block;
+}
+
+#sidebar ul li a{
+	padding: 10px;
+	font-size: 1.1em;
+    display: block;
+    color: #fff;
+}
+#sidebar ul li a:hover {
+    color: #7386D5;
+    background: #fff;
+}
+
+#sidebar ul li.active>a,
+a[aria-expanded="true"] {
+    color: #fff;
+    background: #6d7fcc;
+}

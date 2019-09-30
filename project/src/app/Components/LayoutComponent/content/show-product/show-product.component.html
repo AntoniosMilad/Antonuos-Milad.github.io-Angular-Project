@@ -1,0 +1,50 @@
+<div class="container">
+  <h2>Products</h2>
+  <div class="text-center" style="font-size:42px;font-weight:bold"  *ngIf="newProdList.length==0">
+    no Products Found! Sorry for that
+    <br>
+    <br>
+  </div>
+  <div class="card-columns">
+    <div class="card text-dark bg-light" *ngFor="let prod of newProdList">
+      <img class="card-img-top"  style="width:350px;height:300px" [src]="'http://localhost:59825/'+prod.url">
+      <div class="card-body ">
+        <h5 class="card-title">{{prod.Name}}</h5>
+        <p class="card-text text-left">Place some text for the {{prod.Name}} here. </p>
+        <p class="card-text text-left">{{prod.Price}}</p>
+      </div>
+      
+      <div class="card-footer bg-success text-right text-danger">
+      <button class="btn btn-outline-light btn-sm"(click)="shoppingCart(prod)">Add to cart<i class="fas fa-shopping-cart ml-1"></i></button>
+      <button class="btn btn-outline-light btn-sm" data-toggle="modal" data-target="#myModal" (click)="shoppingCart(prod)">View Details</button>
+        <!-- The Modal -->
+        <div class="modal" id="myModal">
+          <div class="modal-dialog">
+            <div class="modal-content">
+
+              <!-- Modal Header -->
+              <div class="modal-header">
+                <h4 class="modal-title">{{prod.Name}}</h4>
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+              </div>
+
+              <!-- Modal body -->
+              <div class="modal-body">
+                <img class="card-img-top img-fluid" [src]="'http://localhost:59825/'+prod.url" width=150px height=150px>
+                <div>Product ID: {{prod.ID}}</div>
+                <div>Product price: {{prod.Price}}</div>
+                <div>Available Quantity: {{prod.Quantity}}</div>
+              </div>
+
+              <!-- Modal footer -->
+              <div class="modal-footer">
+                <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

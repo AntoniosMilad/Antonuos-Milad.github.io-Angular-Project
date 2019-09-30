@@ -1,0 +1,201 @@
+/*-- features --*/
+h3.title-w3pvt,
+h3.title-w3pvt.two {
+    text-shadow: 3px 1px 3px rgba(45, 45, 45, 0.14);
+    font-size: 2.7em;
+    color: #333;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+h3.title-w3pvt.two {
+    color: #fff;
+}
+
+.about {
+    background: #f5f1f6;
+}
+
+h3.tittle {
+    font-size: 2.5em;
+    letter-spacing: 2px;
+    color: #292a2b;
+    text-transform: uppercase;
+}
+
+.feature-grids h3,
+.bottom-gd.fea h3 {
+    color: #05c46b;
+    letter-spacing: 1px;
+    margin-top: 0em;
+    font-size: 1.4em;
+}
+
+.feature-grids p {
+    margin: 0;
+}
+
+.feature-grids span {
+    font-size: 2em;
+    vertical-align: middle;
+    color: #2e3840;
+    margin-bottom: 0.3em;
+}
+
+.bottom-gd,
+.bottom-gd2-active {
+    background: #fff;
+    transition: 2s all;
+    -webkit-transition: 2s all;
+    -moz-transition: 2s all;
+    -ms-transition: 2s all;
+    -o-transition: 2s all;
+    box-shadow: 7px 7px 10px 0 rgba(76, 110, 245, .1);
+}
+
+.bottom-gd2-active {
+    background: #ff0084;
+    transition: 2s all;
+    -webkit-transition: 2s all;
+    -moz-transition: 2s all;
+    -ms-transition: 2s all;
+    -o-transition: 2s all;
+}
+
+.bottom-gd2-active span {
+    color: #fff;
+}
+
+.bottom-gd2-active p {
+    color: #fff;
+}
+
+.bottom-gd2-active h3 {
+    color: #fff;
+}
+
+.feature-grids h3,
+.bottom-gd.fea h3 {
+    font-size: 1em;
+    color: #1e272e;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+
+.effect-w3 {
+    padding: 6px;
+    background: #f0f0f1;
+}
+
+/*-- //features --*/
+.ab-content h4 {
+    font-size: 1.2em;
+    color: #4c4d4e;
+    margin: 2em 0 1em 0;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+ul.tic-info li span {
+    color: #ff0084;
+}
+
+ul.tic-info li {
+    color: #566773;
+    font-size: 0.9em;
+    margin-bottom: 1.5em;
+    letter-spacing: 1px;
+
+}
+
+.progress-bar-striped {
+    background-image: none;
+    background-size: 0.5rem 0.5rem;
+}
+
+.progress-one .progress {
+    height: 0.5rem;
+    background: #ff0084;
+}
+
+h4.progress-wthree {
+    color: #555;
+    font-size: 0.85em;
+    text-transform: uppercase;
+    margin-bottom: 1em;
+    letter-spacing: 1px;
+    font-weight: 500;
+}
+
+.progress-one .progress {
+    height: 0.3rem;
+    background: #444;
+    border-radius: 0px;
+}
+
+.gd-bottom.process-1 {
+    margin-top: 3em;
+}
+
+/*-- /stats --*/
+.stats_w3layouts_counter_grid span {
+    font-size: 35px;
+    margin-bottom: 0.7em;
+}
+
+p.para-w3layouts {
+    font-size: 15px;
+    text-transform: uppercase;
+}
+
+p.counter {
+    color: #444;
+    font-size: 3em;
+    font-weight: 600;
+    line-height: 0.7em;
+}
+
+.f1 {
+    color: #ff0084;
+}
+
+.f2 {
+    color: #efc001;
+}
+
+.f3 {
+    color: #0063dc;
+}
+
+.f4 {
+    color: #2db928;
+}
+
+/*-- //stats --*/
+/*-- partners --*/
+.partners {
+    background: #efc001;
+}
+
+.partner-w3pvt span {
+    font-size: 3em;
+    color: #333;
+    transition: 0.5s all;
+    -webkit-transition: 0.5s all;
+    -moz-transition: 0.5s all;
+    -ms-transition: 0.5s all;
+    -o-transition: 0.5s all;
+}
+
+.partner-w3pvt h4 {
+    text-transform: uppercase;
+    font-size: 0.9em;
+    font-weight: 600;
+    letter-spacing: 2px;
+    margin-top: 5px;
+    text-shadow: 3px 1px 3px rgba(45, 45, 45, 0.06);
+    color: #333;
+}
+
+/*-- //partners --*/

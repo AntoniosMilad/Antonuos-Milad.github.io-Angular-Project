@@ -1,0 +1,55 @@
+<div class="container-fluid">
+  <div class="row">
+
+    <div class="col-3">
+      <div class="wrapper">
+        <nav id="sidebar">
+          <div class="sidebar-header">
+            <div class="user-pic">
+              <img class="img-responsive img-rounded" src="https://raw.githubusercontent.com/azouaoui-med/pro-sidebar-template/gh-pages/src/img/user.jpg"
+                alt="User picture">
+            </div>
+            <div class="user-info">
+              <span class="user-name">Esraa
+                <strong>Mohamed</strong>
+              </span>
+              <span class="user-role">Administrator</span>
+              <span class="user-status">
+                <i class="fa fa-circle"></i>
+                <span>Online</span>
+              </span>
+            </div>
+          </div>
+          <br><br>
+          
+          
+          <ul class="list-unstyled components">
+            <li class="active">
+              <a routerLink="/showProduct">All Products</a>
+            </li>
+            <li>
+              <a routerLink="/showCategories" >All Categories</a>
+            </li>
+          </ul>
+          
+          <ul class="list-unstyled CTAs">
+            <li>
+              <a href="#" class="download">Add another Admin</a>
+            </li>
+            <li>
+              <a href="#" class="article">Log IN</a>
+            </li>
+          </ul>
+          <br><br><br>
+        <br><br><br><br>
+        </nav>
+      </div>
+    </div>
+
+    <div class="col-9">
+      <router-outlet></router-outlet>
+    </div>
+    
+  </div>
+</div>
+

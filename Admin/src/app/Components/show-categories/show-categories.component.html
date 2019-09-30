@@ -1,0 +1,21 @@
+<div class="container-fluid">
+    <a routerLink="/addCategory" class="btn btn-primary" >Add Category</a>
+  <table class="table">
+    <thead class="thead-light">
+      <tr>
+        <th scope="col">ID</th>
+        <th scope="col">Name</th>
+        <th scope="col">Edit</th>
+        <th scope="col">Delete</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let cat of CatList">
+        <td>{{cat.ID}}</td>
+        <td>{{cat.Name}}</td>
+        <td><a routerLink="/editCat/:{{cat.ID}}" class="btn btn-primary">Edit</a></td>
+        <td><a class="btn btn-danger" (click)="DeleteCat(cat.ID)" routerLink="/showCategories">Delete</a></td>
+      </tr>
+    </tbody>
+  </table>
+</div>

@@ -1,0 +1,28 @@
+<div class="container-fluid">
+    <a routerLink="/addProduct" class="btn btn-primary" >Add Product</a>
+  <table class="table">
+    <thead class="thead-light">
+      <tr>
+        <th scope="col">ID</th>
+        <th scope="col">Name</th>
+        <th scope="col">Img</th>
+        <th scope="col">Price</th>
+        <th scope="col">Quantity</th>
+        <th scope="col">Edit</th>
+        <th scope="col">Delete</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let prd of prdList">
+        <td>{{prd.ID}}</td>
+        <td>{{prd.Name}}</td>
+        <td><img [src]="'http://localhost:59825/'+prd.url" alt=""></td>
+        <td>{{prd.Price}}</td>
+        <td>{{prd.Quantity}}</td>
+        <td><a routerLink="/edit/{{prd.ID}}" class="btn btn-primary">Edit</a></td>
+        <td><a class="btn btn-danger" (click)="DeleteProd(prd.ID)" routerLink="/showProduct">Delete</a></td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+<router-outlet></router-outlet>
